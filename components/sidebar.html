@@ -1,0 +1,43 @@
+<aside id="sidebar" class="js-sidebar" style="min-height: 100vh;">
+    <div class="h-100">
+        <div class="d-flex justify-content-start align-items-center border-1 border-bottom mx-3" 
+            style="height: 58px;"
+            >
+            <a class="text-white fw-semibold fs-2" href="index.html">
+                <i class="bi bi-bar-chart-fill text-white fs-2"></i>
+                <span class="fs-4">Guru App v.1.1</span>
+            </a>
+        </div>
+        <ul class="px-3 mt-3">
+            <li class="sidebar-item">
+                <a href="index.html" class="sidebar-menu-1">
+                    <span class="d-flex align-items-center ps-3">
+                        <i class="bi bi-house fs-5 me-2"></i>
+                        <span>Home</span>
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" 
+                    class="sidebar-menu-1 sidebar-menu-2 collapsed" 
+                    data-bs-target="#pages" 
+                    data-bs-toggle="collapse"
+                    aria-expanded="false">
+                    <span class="d-flex align-items-center ps-3">
+                        <i class="i bi-list-task fs-5 me-2"></i>
+                        <span>ENM</span>
+                    </span>
+                    <i class="bi bi-chevron-down me-3"></i>
+                </a>
+                <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="enm-cli-admin.html" class="sidebar-menu-1 sidebar-menu-3">&bullet; CLI Admin</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-menu-1 sidebar-menu-3">&bullet; GUI Admin</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>

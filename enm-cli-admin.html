@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>ENM CLI Admin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-placeholder"></div>
+        <div class="main">
+            <!-- Navbar -->
+            <div id="navbar-placeholder"></div>
+            <!-- Content -->
+            <main class="content px-3 py-2">
+                <h2 class="my-3">ENM CLI Admin</h2>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <input type="text" id="content-search" class="form-control" 
+                            placeholder="Keresés cím és leírás alapján...">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="tag-search" class="form-control" 
+                            placeholder="Keresés tag-ek alapján...">
+                    </div>
+                </div>
+                <div class="container-fluid border rounded-3 p-3 shadow-sm" 
+                    style="overflow-y: scroll; max-height: 70vh;"
+                >
+                    <div id="app-container" class="row"></div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script src="./static/js/components.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+    <script type="module">
+        import { initApp } from './static/js/app.js';
+        initApp('./static/data/tutorial.csv');
+    </script>
+</body>
+
+</html>

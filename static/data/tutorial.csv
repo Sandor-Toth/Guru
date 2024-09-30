@@ -1,0 +1,4 @@
+col_id;col_title;short_description;long_description;image_path;command;tags
+python_basics;Python alapok;Ismerkedés;Ismerkedés a Python programozási nyelvvel;/static/images/logo.png;print("Hello, World!");python, programozás
+js_dom;JavaScript DOM manipuláció;Ismerkedés;A Document Object Model kezelése JavaScripttel;/static/images/logo.png;document.getElementById('example').innerHTML = 'Hello!';javascript, web, dom
+css_flexbox;CSS Flexbox;Ismerkedés;Rugalmas elrendezések készítése CSS Flexbox segítségével;/static/images/logo.png;.container { display: flex,};css, layout, flexbox
